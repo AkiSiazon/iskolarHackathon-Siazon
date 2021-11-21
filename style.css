@@ -1,0 +1,291 @@
+/*COLORS*/
+::selection {
+  color: white;
+  background: #6A4A3C;
+}
+
+/*FONTS*/
+h1 {
+    font-size: 40px;
+}
+h1, .title, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+}
+.navigation, h3, #greeting, #notice, #scroll{
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 800;
+    font-size: 30;
+}
+p, h4, input {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.subtext {
+    font-family: 'Josefin Slab', serif;
+}
+input {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid #6A4A3C;
+    background-color: white;
+    margin-bottom: 20px;
+    color: #6A4A3C;
+}
+h5 {
+   font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+}
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+}
+
+/*BODY AND CONTENT OF WEBSITE*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*INTRODUCTION DESIGN*/
+#first {
+    display: block;
+}
+#opening {
+    margin-left: 10%;
+    margin-top: -400px;
+    margin-bottom: 300px;
+    width: 50%;
+}
+#firstimg {
+    margin-left: 50%;
+    margin-top: -18px;
+    width: 50%;
+    height: 680px;
+}
+
+/*INTRODUCTION DETAILS*/
+.story {
+    margin-left: 100px;
+    margin-top: -500px;
+    margin-bottom: 350px;
+    width: 40%;
+    
+}
+.storyimg {
+    margin-left: 50%;
+    margin-top: -18px;
+    width: 50%;
+    height: 800px;
+}
+.story2 {
+    width: 40%;
+    position: absolute;
+    left: 850px;
+    margin-top: 250px;
+    
+    
+}
+.storyimg2 {
+    width: 50%;
+    height: 800px;
+}
+
+/*TSPACE.HTML INTRO*/
+.tspaceimg {
+    margin-left: 50%;
+    width: 50%;
+    height: 700px;
+    margin-bottom: 8px;
+}
+.tspaceopening {
+    margin-left: 75px;
+    margin-top: -500px;
+    margin-bottom: 300px;
+    width: 40%;
+}
+#scroll {
+    margin-left: 75px;
+    float: left;
+    margin-top: -200px;
+}
+#login, #filter, #notice {
+    margin-left: 100px;
+}
+.teacher, .student {
+    display: inline-block;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+/*ABOUT US  */
+#developers {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+#devimg {
+    margin-left: 30%;
+    margin-right: 40%;
+    width: 250px;
+}
+header, h5 {
+    text-align: center;
+}
+#devintro, #footnote {
+    text-align: justify;
+}
+
+/*FOOTER DETAILS*/
+#footer {
+    background-color: #302f2f;
+    color: #ebdbda;
+    height: 400px;
+}
+#tspaceinfo {
+    padding-left: 100px;
+    padding-top: 80px;
+}
+#tspaceinfo {
+    float: left;
+}
+#personalinfo {
+    float: right;
+    width: 300px;
+    padding-right: 100px;
+    margin-top: 75px;
+    
+}
+#copyright {
+    float: left;
+    padding-top: 350px;
+    margin-left: -200px;
+    
+}
+
+
+/*OTHERS*/
+.overlay {
+    position: fixed; 
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2;
+    cursor: pointer;
+    }
+
+.exinfo{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 24px;
+    border: 10px solid #EDC951;
+} 
+th, td {
+    border: 2px solid #EDC951;
+    color: #CC333F;
+    
+}
+.navlink {
+  display: inline-block;
+  position: relative;
+  color: #EDC951;
+}
+
+.navlink:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #EDC951;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navlink:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navigation {
+    overflow: hidden;
+    background-color: #CC333F;
+}
+.navigation a {
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.primary {
+    display: block;
+}
+button {
+    font-family:'Josefin Sans', serif;
+    font-weight: 800;
+    width: 200px;
+    border: 2px solid #CC333F;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    color: #CC333F;
+    font-size: 20px;
+}
+button:hover {
+    transition: 0.5s;
+    color: #EDC951;
+    border: 2px solid #EDC951;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+.icon {
+    width: 30px;
+    padding: 10px;
+}
+#title {
+    float: left;
+    margin-left: 10px;
+    
+}
+#logo {
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+}
+a {
+    color: #CC333F;
+}
+a:hover {
+    transition: 0.5s;
+    color:#EDC951;
+}

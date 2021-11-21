@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TSpace: A Place for Chances.</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/Jy56h8J/logo.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Josefin+Slab:wght@300;700&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	
+	</head>
+
+    <body>
+        
+        <!--Navigation Bar-->
+        <div class="navigation">
+            <img id="logo" src="https://i.ibb.co/Jy56h8J/logo.png">
+            <h1 id="title">TSpace</h1>
+            <a class="navlink" id="about" href="aboutus.html">About Us</a>
+            <a class="navlink" id="contact" href="contactus.html">Contact Us</a>
+            <a class="navlink" id="TSpace" href="Tspace.html">TSpace</a>
+            <a class="navlink" id="home" href="index.html">Home</a>
+        </div>
+        
+             
+        <!--Introduction-->
+        <div>
+            <div><img class="tspaceimg" src="https://i.ibb.co/CVkLRs8/intro.png">
+            </div>
+            <div class="tspaceopening">
+            <h1>TSpace</h1>
+            <h2>Bringing students with learning disabilites a chance with learning.</h2>
+            <h4>TSpace is a network where various students with certain learning disabilities
+                discover teachers suitable for their learning style. Educationally challenged
+                students can browse teachers who have capabilities of teaching them in a
+                school environment. They can contact the needed mentor if for any questions that
+                may assist them in further school application plans, giving these students another shot
+                in learning in the school environment.</h4>
+            </div>
+            <div id="scroll">Scroll!</div>  
+        </div>
+        
+        <br>
+        <!--Username Input-->
+        <div id="login">
+            <input id="username" type="text" placeholder="Enter Username...">
+            <input type="submit" onclick="setUsername()" value="Set Name!">
+            <div id="greeting">Good Day, Guest!</div>
+        </div>
+        <br>
+        
+        <!--Filter Button-->
+        <div id="filter">
+            <h3>Filter Profiles</h3>
+            <button  onclick="showAll()">Show all</button>
+            <button onclick="showStudent()"> Student</button>
+            <button onclick="showTeacher()"> Teacher</button>
+
+        </div>
+        <br><br>
+        <!--Disclaimer-->
+        <div onclick="closeNotice" id="notice">Profiles registered in Tspace are dummy users, and are not real human beings. They are only used for demonstration.</div>
+        
+        
+        <!--TSpace Profiles-->
+        <div id="profiles">  
+        <!--Teacher Profiles-->
+            <div id="teachpart">
+           
+                <!--Teacher Profile 1-->
+                <div class="teacher">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                   <h3>Julie Leebough</h3>
+                   <button class="button" onclick="on(), expandInfo()">More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>Julie Leebough</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off()">X</button></th>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Teached</th>
+                                <th>Contact Number</th>
+                                <th>Special Learning Experience</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Canada</td>
+                                <td>Science, Math</td>
+                                <td>+1 918293****</td>
+                                <td>ADHD, Dyslexia</td>
+                                <td>jl******@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <!--Teacher Profile 2-->
+                <div class="teacher">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                    <h3>Mark Chan</h3>
+                    <button class="button" onclick="on2(), expandInfo2()">More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>Mark Chan</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off2()">X</button></th>
+                            </tr>  
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Teached</th>
+                                <th>Contact Number</th>
+                                <th>Special Learning Experience</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Cambodia</td>
+                                <td>English, Social Studies</td>
+                                <td>034-943-****</td>
+                                <td>Dyscalculia, Dyslexia</td>
+                                <td>mrkc******@gmail.com</td>
+                           </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--Teacher Profile 3-->
+                <div class="teacher">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                    <h3>Kumiho Kazari</h3>
+                    <button class="button" onclick="on3(), expandInfo3()" >More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>Kumiho Kazari</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off3()">X</button></th>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Teached</th>
+                                <th>Contact Number</th>
+                                <th>Special Learning Experience</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Japan</td>
+                                <td>Math, Technology, Social Studies</td>
+                                <td>+8122-858-**** </td>
+                                <td>Dysgraphia, Non-Verbal Learning Diabilities</td>
+                                <td>kuza****@gmail.com</td>
+                            </tr>
+                        </table> 
+                    </div>   
+                </div>
+            </div>
+            
+        <!--Student Profiles-->
+            <div id="studentpart">
+                <!--Student Profile 1-->
+                <div class="student">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                    <h3>John Lee</h3>
+                    <button class="button" onclick="on4(), expandInfo4()">More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>John Lee</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off4()">X</button></th>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Needed for Education</th>
+                                <th>Contact Number</th>
+                                <th>Learning Disability</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Canada</td>
+                                <td>Science, Math</td>
+                                <td>+1 913946****</td>
+                                <td>ADHD, Dyslexia</td>
+                                <td>jol*****@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+      
+
+                <!--Student Profile 2-->
+                <div class="student">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                    <h3>Elise Hemmingway</h3>
+                    <button class="button" onclick="on5(), expandInfo5()">More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>Elise Hemmingway</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off5()">X</button></th>
+                            </tr>  
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Needed for Education</th>
+                                <th>Contact Number</th>
+                                <th>Learning Disability</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Cambodia</td>
+                                <td>English, Social Studies</td>
+                                <td>034-329-****</td>
+                                <td>Dyscalculia, Dyslexia</td>
+                                <td>elsh******@gmail.com</td>
+                             </tr>
+                    </table>
+                    </div>
+                </div>
+                
+                <!--Student Profile 3-->
+                <div class="student">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU">
+                    <h3>Kazuma Haito</h3>
+                    <button class="button" onclick="on6(), expandInfo6()">More Info</button>
+                    <div class="overlay">
+                        <table class="exinfo">
+                            <tr>
+                                <th>Kazuma Haito</th>
+                                <th><img src=""></th>
+                                <th><button onclick="off6()">X</button></th>
+                            </tr>
+                            <tr>
+                                <th>Country</th>
+                                <th>Subject Needed for Education</th>
+                                <th>Contact Number</th>
+                                <th>Learning Disability</th>
+                                <th>Email Address</th>
+                            </tr>
+                            <tr>
+                                <td>Japan</td>
+                                <td>Math, Technology, Social Studies</td>
+                                <td>+8122-873-**** </td>
+                                <td>Dysgraphia, Non-Verbal Learning Diabilities</td>
+                                <td>kazuha***@gmail.com</td>
+                            </tr>
+                        </table> 
+                    </div>   
+                </div>
+            </div>
+        </div>   
+
+      
+        <div id="footer">
+            <div id="leftfooter">
+                <div id="tspaceinfo">
+                    <div class="title">Email</div> 
+                    <br>
+                    <div class="subtext">tspaces2020@gmail.com</div>
+                    <br><br>
+                    <div class="title">Follow Us on Social Media:</div>
+                    <a href="https://twitter.com/wawaqin1821"><img class="icon" src="https://i.ibb.co/XWDv2jH/twitter.png"></a>
+                    <a href="https://www.facebook.com/joaquin.siazon.7"><img class="icon" src="https://i.ibb.co/X35KDZp/facebook.png"></a>
+                    <a href="https://www.instagram.com/waqin183/"><img class="icon" src="https://i.ibb.co/zhrLGjC/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/in/aki-sia-a63666210/"><img class="icon" src="https://i.ibb.co/kc0qDwj/instagram.png"></a> 
+                </div>
+
+                <div id="copyright" class="title">
+                Made By Joaquin A. Siazon
+                © 2021 TSpace, All Rights Reserved.
+                </div>
+            </div>
+          
+            <div id="rightfooter">
+                <div id="personalinfo">
+                    <div class="title">Developer Information</div> <br>
+                    <div class="title">Developer Name:</div> <br>
+                        <div class="subtext">Joaquin A. Siazon</div> <br>
+                    <div class="title">Contact Number:</div><br>
+                        <div class="subtext">
+                            0933-818-9822 <br>
+                            0999-165-6227 <br>
+                        </div>
+                    <div class="title">Email Address:</div><br>
+                    <div class="subtext">jasiazon1812@gmail.com</div><br>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        
+
+    </body>
+    
+    <!--JavaScript Source-->
+    <script src="script.js"></script>
+    
+</html>
